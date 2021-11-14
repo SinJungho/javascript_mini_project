@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="todo">
+    <h1>TO DO LIST</h1>
+    <!-- clcok -->
+    <div>
+      <h1 class="todo__clock">00:00:00</h1>
+    </div>
+    <!-- todo list -->
+    <form class="todo__form" action="index.html" method="post">
+      <input type="text" name="todo__text" id="" placeholder="새로운 할 일을 입력하세요.">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="todo__item">
+      <ul></ul>
+      <a class="clear">모두 삭제</a>
+    </div>
+  </div> 
+  <script src="js/todo__clock.js"></script> 
+  <script src="js/todo.js"></script>
+</body>
+</html>

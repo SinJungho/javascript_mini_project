@@ -49,6 +49,7 @@ function addTask(value) {
 	let li = document.createElement('li');
 	li.innerHTML = `<input type ="checkbox"><label>${value}</label><span class = "delete">🗑</span>`;
 	ul.appendChild(li);
-	document.querySelector('.todo__item').style.display = 'block';
+	// document.querySelector('.todo__item').style.display = 'block';
+	document.querySelector('.todo__item').style.display = 'flex';
 }
 

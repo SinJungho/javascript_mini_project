@@ -1,7 +1,7 @@
 function init() {
   document.querySelector('.clear').addEventListener('click', clearToDo);
   document.querySelector('.todo__form').addEventListener('submit', addToDo);
-  document.querySelector('ul').addEventListener('click', delOrCheck);
+  document.querySelector('.todo__item').addEventListener('click', delOrCheck);
 }
 
 init();
@@ -25,6 +25,7 @@ function checkToDo(event) {
 	if(event.target.checked){
 		todo.style.color = '#eeeeee';
 		todo.style.textDecoration = 'line-through';
+		todo.classList.add = '.delete__animation';
 	} else{
 		todo.style.color = '#000000';
 		todo.style.textDecoration = 'none';

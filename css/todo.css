@@ -105,6 +105,10 @@ input [type="checkbox"]{
 	background-color: black;
 }
 
+.delete__animation{
+  transition: all 1s ease-in-out;
+}
+
 .delete{
 	cursor: pointer;
 }

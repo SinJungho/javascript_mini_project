@@ -6,20 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
   <link rel="stylesheet" href="style.css">
-  <script src="js/timer.js"></script>
 </head>
 <body>
 	<div class="timer">
 		<div class="timer__title">
 			<h1>Timer</h1>
 		</div>
-		<div class="timer__text">
-			<span>00:00:00</span>
+		<div>
+			<span class="timer__text">00:00:00</span>
 		</div>
-		<form action="post" class="timer__btn">
-			<button class="timer__btn__start" type="">시작</button>
-			<button class="timer__btn__stop" type="">정지</button>
+		<form class="timer__btn">
+			<button class="timer__btn__start" onclick="startTimer()">시작</button>
+			<button class="timer__btn__reset" onclick="resetTimer()">초기화</button>
+			<button class="timer__btn__stop" onclick="stopTimer()">정지</button>
 		</form>
 	</div>
+	<!-- <script src="js/timer.js"></script> -->
+	<script src="js/test.js"></script>
 </body>
 </html>

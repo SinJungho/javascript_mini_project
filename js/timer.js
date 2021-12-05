@@ -1,21 +1,22 @@
-function init() {
-	let timer = document.querySelector('.timer__text');
-	let start = document.querySelector('.timer__btn__start').addEventListener('click', startTimer);
-	let stop = document.querySelector('.timer__btn__stop').addEventListener('click',  stopTimer);
-}
+const timer = document.querySelector('.timer__text');
+let start = document.querySelector('.timer__btn__start').addEventListener('click', startTimer);
+let stop = document.querySelector('.timer__btn__stop').addEventListener('click', stopTimer);
 
 let TIME = 0;
+let cron;
 
 function startTimer() {
 	printTimer();
-	init();
+	// stopTimer();
 	corn = setInterval(printTimer, 1000);
 	timer.classList.add('hide');
+	console.log('hello');
 }
 
 function stopTimer() {
 	clearInterval(corn);
 	timer.classList.remove('hide');
+	console.log('hello');
 }
 
 
@@ -25,8 +26,9 @@ function printTimer() {
 	const second = TIME % 60;
 	const minutes = checkMinutes % 60;
 
-	timer.innerText = `${hour < 10 ? `0${hour} ` : hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${second < 10 ? `0${second}` : second}`; 
+	timer.innerText = `${hours < 10 ? `0${hours} ` : hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${second < 10 ? `0${second}` : second}`; 
 	TIME++;
 }
-
-init();
+startTimer();
+// start.addEventListener('click', startTimer);
+// stop.addEventListener('click',  stopTimer);

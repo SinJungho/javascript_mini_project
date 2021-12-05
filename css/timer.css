@@ -14,7 +14,8 @@ body{
   align-items: center;
 }
 
-.timer__text span{
+.timer__text{
+	display: block;
 	font-size: 10em;
 	font-weight: bold;
 	display: block;

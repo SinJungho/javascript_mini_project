@@ -1,0 +1,24 @@
+.slide__wrap{
+	width: 960px;
+	margin: auto;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.slide__box{
+	overflow-x: hidden;
+	width: 100%;
+	margin: auto;
+}
+
+.slide__item{
+  float: left;
+	display: table;
+	width: 960px;
+	height: 520px;
+}
+
+.slide__item img{
+  /* width: 960px;
+  height: 520px; */
+}

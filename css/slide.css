@@ -3,17 +3,18 @@
 	margin: auto;
 	padding-bottom: 30px;
 	position: relative;
+	overflow: hidden;
 }
 
 .slide__box{
-	overflow-x: hidden;
-	width: 100%;
+	width: 5760px;
+	/* overflow: hidden; */
 	margin: auto;
 }
 
 .slide__item{
   float: left;
-	display: table;
+	/* display: table; */
 	width: 960px;
 	height: 520px;
 }

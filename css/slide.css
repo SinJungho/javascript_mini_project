@@ -1,5 +1,5 @@
 .slide__wrap{
-	width: 960px;
+	width: 460px;
 	margin: auto;
 	padding-bottom: 30px;
 	position: relative;
@@ -7,19 +7,20 @@
 }
 
 .slide__box{
-	width: 5760px;
-	/* overflow: hidden; */
+	/* width: 5760px; */
+	width: 100%;
+	/* overflow-x: hidden; */
 	margin: auto;
 }
 
 .slide__item{
   float: left;
-	/* display: table; */
-	width: 960px;
-	height: 520px;
+	display: table;
+	width: 460px;
+	height: 320px;
 }
 
 .slide__item img{
-  /* width: 960px;
-  height: 520px; */
+	width: 460px;
+	height: 320px;
 }
